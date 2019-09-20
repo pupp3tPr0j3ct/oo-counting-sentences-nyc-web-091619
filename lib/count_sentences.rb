@@ -17,11 +17,11 @@ class String
   end
 
   def exclamation?
-
+    self[-1] == "!"
   end
 
   def count_sentences
-
+    
   end
 end
 

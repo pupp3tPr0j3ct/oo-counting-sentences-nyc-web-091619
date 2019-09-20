@@ -2,8 +2,14 @@ require 'pry'
 
 class String
 
+  attr_accessor :sentence
+
+  def initialize
+    @sentence = sentence
+  end
+
   def sentence?
-    
+    self[-1] == "."
   end
 
   def question?
@@ -18,3 +24,5 @@ class String
 
   end
 end
+
+#binding.pry

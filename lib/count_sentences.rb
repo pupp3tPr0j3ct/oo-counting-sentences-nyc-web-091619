@@ -19,11 +19,16 @@ class String
   def exclamation?
     self[-1] == "!"
   end
-
+  
   def count_sentences
-    self.split.length
-    
+    a = self.split(/\.|\!|\?/)
+
+    a.delete_if do |str|
+      str.length < 2
+    end
+    a.length
+    #binding.pry
   end
+
 end
 
-#binding.pry
